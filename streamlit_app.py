@@ -46,7 +46,7 @@ st.logo(
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.title("🔍 :red[CrewAI] :blue[AGENTS BOX]", anchor=False)
-
+st.info('This is a purely informational message, first press the research button and wait till it gets executed. After this wait for some time before doing the start creative button as it is taking groq key now it can\'t do regular consistent task so give time so rate limit of groq does not exceed', icon="ℹ️")
 # Render sidebar and get selection (provider and model)
 selection = render_sidebar()
 
@@ -76,7 +76,7 @@ input_col1, input_col2, input_col3 = st.columns([1, 3, 1])
 with input_col2:
     task_description = st.text_area(
         "What would you like to research?",
-        value="Research the latest AI Agent news in February 2025 and summarize each.",
+        value="m2 chip of apple laptops",
         height=68
     )
 
@@ -184,37 +184,37 @@ if make_a_campaign:
         # Display the final result
         st.markdown(strategy)
     
-    # Create download buttons
-    st.divider()
-    download_col1, download_col2, download_col3 = st.columns([1, 2, 1])
-    with download_col2:
-        st.markdown("### 📥 Download  Reports")
+# Create download buttons
+st.divider()
+download_col1, download_col2, download_col3 = st.columns([1, 2, 1])
+with download_col2:
+    st.markdown("### 📥 Download  Reports")
         
-        # Download as Markdown
-        st.download_button(
-            label="Download final creative strategy Report",
-            data=read_markdown_file("output/final_creative_strategy.md"),
-            file_name="final_creative_strategy.md",
-            mime="text/markdown",
-            help="Download the research report in Markdown format"
-        )
-        st.download_button(
-            label="Download Brand Report",
-            data=read_markdown_file("output/brand_report.md"),
-            file_name="brand_report.md",
-            mime="text/markdown",
-            help="Download the research report in Markdown format"
-        )
-        st.download_button(
-            label="Download Campaign Strategy Report",
-            data=read_markdown_file("output/campaign_strategy_report.md"),
-            file_name="campaign_strategy_report.md",
-            mime="text/markdown",
-            help="Download the research report in Markdown format"
-        )
+    # Download as Markdown
+    st.download_button(
+        label="Download final creative strategy Report",
+        data=read_markdown_file("output/final_creative_strategy.md"),
+        file_name="final_creative_strategy.md",
+        mime="text/markdown",
+        help="Download the research report in Markdown format"
+    )
+    st.download_button(
+        label="Download Brand Report",
+        data=read_markdown_file("output/brand_report.md"),
+        file_name="brand_report.md",
+        mime="text/markdown",
+        help="Download the research report in Markdown format"
+    )
+    st.download_button(
+        label="Download Campaign Strategy Report",
+        data=read_markdown_file("output/campaign_strategy_report.md"),
+        file_name="campaign_strategy_report.md",
+        mime="text/markdown",
+        help="Download the research report in Markdown format"
+    )
 
 # Add footer
 st.divider()
 footer_col1, footer_col2, footer_col3 = st.columns([1, 2, 1])
 with footer_col2:
-    st.caption("Made with ❤️❤️❤️ using [CrewAI](https://crewai.com), [Exa](https://exa.ai) and [Streamlit](https://streamlit.io)")
+    st.caption("Made with ❤️❤️❤️ and luck....")
